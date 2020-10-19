@@ -398,7 +398,7 @@ MonoBehaviour:
   player: {fileID: 117433930}
   cam: {fileID: 519420031}
   line: {fileID: 117433929}
-  force: 220000
+  force: 2200
 --- !u!135 &117433932
 SphereCollider:
   m_ObjectHideFlags: 0

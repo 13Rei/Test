@@ -8,7 +8,7 @@ public class script : MonoBehaviour
     Vector3 pos;
     [Tooltip("Moving object force")]
     [Space]
-    public float force = 400000f;
+    public float force = 220000f;
 
 
     void Start()
@@ -20,12 +20,12 @@ public class script : MonoBehaviour
     {
         pos = cam.WorldToScreenPoint(transform.position);
         #region Moven
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
             if (isStart)
                 line.enabled = true;
         }
-        if (Input.GetMouseButtonUp(1))
+        if (Input.GetMouseButtonUp(1) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
         {
             if (isStart)
             {

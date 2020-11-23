@@ -21,21 +21,26 @@ public class follow : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = parent.transform.position;
-        if (child.name != "Cube" && child.name != "Arrow" && child.name != "Triangle")
-        {
-            transform.rotation = Quaternion.Euler(90, 180, 0);
-        }
-        else
+        if (child.name == "Cube" || child.name == "Arrow" || child.name == "Triangle")
         {
             Vector3 deltaPosition = transform.position - prevPosition;
 
+            deltaPosition.Normalize();
+
             if (deltaPosition != Vector3.zero)
             {
-                // Same effect as rotating with quaternions, but simpler to read
-                transform.forward = deltaPosition;
+                float angle = Mathf.Atan2(deltaPosition.z, deltaPosition.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, angle);
             }
-            // Recording current position as previous position for next frame
             prevPosition = transform.position;
+        }
+        else if(child.name == "DVD")
+        {
+            transform.rotation = Quaternion.Euler(90, 180, 0);
+        }
+        else if(child.name == "shuriken")
+        {
+            child.transform.Rotate(0, 0, -300f * Time.deltaTime);
         }
     }
 }

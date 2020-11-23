@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 8ebb45a757ec2ff4ba0ed0f825d71eee
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: I Have Pretty Cool Party!
+  fontNames:
+  - I Have Pretty Cool Party!
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 096a1704446f3d84889cc94e268ed193, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,14 +21,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: background
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 80f10c1bcb6380f47aa33ab5cbdeec4f,
+    type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2050
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -103,9 +103,15 @@ Material:
     - _UVSec: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _backgroundAlbedo: 0
+    - _bgdAlbedo: 0.589
+    - _blueLevel: 1
+    - _greenLevel: 0.524
+    - _redLevel: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.2028302, b: 0.2028302, a: 1}
+    - _BaseColor: {r: 0, g: 0.35150948, b: 0.509434, a: 1}
     - _Color: {r: 1, g: 0.2028302, b: 0.2028302, a: 1}
     - _EmissionColor: {r: 0.000025564463, g: 0.0000008441101, b: 0.0000026560738,
         a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _backgroundColour: {r: 6.26, g: 0, b: 0, a: 0}
